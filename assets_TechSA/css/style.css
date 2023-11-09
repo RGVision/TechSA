@@ -3526,11 +3526,11 @@ img {
 }
 
 .partner-area .partner-item:hover img:first-child {
-  display: none;
+  display: block;
 }
 
 .partner-area .partner-item:hover img:last-child {
-  display: block;
+  display: none;
 }
 
 /*================================================

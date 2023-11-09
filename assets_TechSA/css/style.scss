@@ -3988,11 +3988,11 @@ img {
     &:hover {
       img {
         &:first-child {
-          display: none;
+          display: block;
         }
 
         &:last-child {
-          display: block;
+          display: none;
         }
       }
     }
