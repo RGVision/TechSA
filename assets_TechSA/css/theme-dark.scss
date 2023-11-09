@@ -1,0 +1,490 @@
+$white-color: #ffffff;
+$color-primary: #6610f2;
+$color-secondary: #00a2f3;
+$dark-color: #1d1d1d;
+$bg-color: #252525;
+$card-bg: #0e0e0e;
+
+
+.switch-box {
+    position: fixed;
+    bottom: 15px;
+    right: 120px;
+    z-index: 9999;
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        border: 1.5px solid $color-primary;
+        transition: 0.4s;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            left: 0px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: white url('../img/night.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.round {
+            border-radius: 34px;
+            &::before {
+                border-radius: 50%;
+            }
+        }
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    input:checked + .slider {
+        background-color: transparent;
+        border: 1.5px solid $color-secondary;
+    }
+      
+    input:focus + .slider {
+        box-shadow: 0 0 1px $color-secondary;
+    }
+      
+    input:checked + .slider:before {
+        transform: translateX(24px);
+        background: white url('../img/sunny.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.theme-dark {
+    $title-main: #ffffff;
+    $paragraph: #ffffff;
+    h1, h2, h3, h4, h5, h6 {
+        color: $white-color !important; 
+    }
+    h3 {
+        color: $white-color !important; 
+        a {
+            color: $white-color !important;
+            transition: 0.7s;
+            &:hover {
+                color: $color-primary !important;
+            }
+        }
+    }
+    h2 {
+        a {
+            color: $white-color !important;
+            transition: 0.7s;
+            &:hover {
+                color: $color-primary !important;
+            }
+        }
+    }
+    a {
+        color: $white-color;
+    }
+    span {
+        color: $white-color !important; 
+    }
+    p {
+        color: $white-color !important; 
+    }
+    .content {
+        p {
+            color: $white-color !important; 
+            b {
+                color: $white-color !important; 
+            }
+        }
+    }
+    body {
+        background: $dark-color;
+        color: $white-color; 
+    }
+    .btn {
+        color: $white-color;
+    }
+    .bg-light {
+        background-color: $bg-color !important;
+    }
+    .bg-white {
+        background-color: $bg-color !important;
+    }
+    .form-group {
+        label {
+            color: $white-color;
+        }
+    }
+    .form-control {
+        background-color: $card-bg !important;
+        color: $white-color !important;
+    }
+    .input-group {
+        background-color: $card-bg !important;
+    }
+    .nice-select {
+        background-color: $card-bg ;
+    }
+    .list {
+        background-color: $card-bg ;
+        .option {
+            color: $white-color !important;
+        }
+    }
+    .option {
+        &.selected {
+            color: $white-color;
+            background-color: $color-primary;
+        }
+        &:hover {
+            color: $white-color;
+            background-color: $color-primary;
+        }
+        &.focus {
+            color: $white-color;
+            background-color: $color-primary;
+        }
+        &.selected {
+            &.focus {
+                color: $white-color;
+                background-color: $color-primary;
+            }
+        }
+    }
+    .select-box {
+        .nice-select {
+            .list {
+                background-color: $card-bg !important;
+            }
+        }
+    }
+    
+    ul {
+        li {
+            color: $white-color !important;
+        }
+    }
+    .btn-text {
+        color: $white-color;
+    }
+    .navbar-area {
+        .top-nav {
+            background-color: $card-bg;
+        }
+        .main-nav {
+            nav {
+                .navbar-nav  {
+                    .nav-item {
+                        a {
+                            color: $white-color !important;
+                            &.active {
+                                color: $color-primary !important;
+                            }
+                            &:hover {
+                                color: $color-primary !important;
+                            }
+                        }
+                        .dropdown-menu {
+                            background-color: $bg-color !important;
+                            li {
+                                a {
+                                    color: $white-color !important;
+                                    &.active {
+                                        color: $color-primary !important;
+                                    }
+                                    &:hover {
+                                        color: $color-primary !important;
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+        &.stickyadd {
+            .main-nav {
+                background-color: $bg-color;
+                .navbar {
+                    .navbar-brand {
+                        img {
+                            &:first-child {
+                                display: block;
+                            }
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .open-btn {
+                color: $white-color;
+            }
+        }
+    }
+    .search-item {
+        .search-popup {
+            background-color: $bg-color;
+            .search-form {
+                .search-input {
+                    background-color: $bg-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .الرئيسية-banner-area {
+        &.banner-type-one {
+            &::before {
+                background: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+    .الرئيسية-banner-area {
+        &.banner-type-two {
+            background-color: $card-bg;
+            background: linear-gradient(150deg, #0d0d0e 0%, #040405 20%, #000000 100%);
+        }
+    }
+    .bg-thin {
+        background-color: transparent !important;
+    }
+    .video-section {
+        &::after {
+            background-color: $card-bg;
+            background: linear-gradient(150deg, #0d0d0e 0%, #040405 20%, #000000 100%);
+        }
+    }
+    .top-feature-section {
+        .shape {
+            opacity: 0.5;
+        }
+    }
+    .single-feature {
+        background-color: $bg-color;
+    }
+    .feature-section {
+        .item-single {
+            background-color: $card-bg;
+        }
+    }
+    .team-section {
+        .team-item {
+            .team-content {
+                background-color: $card-bg;
+                a {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .partner-area {
+        .partner-item {
+            img {
+                &:last-child {
+                    display: block;
+                }
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+    .service-section {
+        .item-single {
+            background-color: $card-bg;
+            .item-content {
+                h6 {
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+    .pricing-section {
+        background-color: $card-bg;
+        background: linear-gradient(150deg, #0d0d0e 0%, #040405 20%, #000000 100%);
+        .pricing-item-single {
+            background-color: $bg-color;
+        }
+    }
+
+    .blog-item-single {
+        .blog-item-content {
+            background-color: $card-bg;
+        }
+    }
+    .blog-details-section {
+        .blog-details-desc {
+            .blockquote {
+                background-color: $bg-color;
+            }
+            .blog-item-single {
+                .blog-item-content {
+                    background-color: $bg-color;
+                }
+            }
+        }
+        .tags {
+            a {
+                background-color: $bg-color;
+                color: $white-color;
+                transition: 0.7s;
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+        .widget-area {
+            .widget-author {
+                background-color: $bg-color;
+                box-shadow: none;
+            }
+            .widget-search {
+                .search-form {
+                    .search-field {
+                        background-color: $card-bg;
+                    }
+                }
+            }
+        }
+    }
+    .project-details-area {
+        .project-details-content {
+            .blockquote {
+                background-color: $bg-color;
+            }
+        }
+    }
+    .newsletter-form {
+        .input-group {
+            .form-control {
+                border-bottom: 1px solid #ababab;
+                border-right: none;
+            }
+        }
+    }
+    .newsletter-section {
+        &.style-two {
+            background-color: $card-bg;
+            background: linear-gradient(150deg, #0d0d0e 0%, #040405 20%, #000000 100%);
+        }
+    }
+    .footer-area {
+        background-color: #000000 !important;
+        .footer-widget {
+            .navbar-brand {
+                img {
+                    &:first-child {
+                        display: none;
+                    }
+                    &:last-child {
+                        display: block;
+                    }
+
+                }
+            }
+            .footer-quick-links {
+                li {
+                    a {
+                        color: $white-color;
+                        transition: 0.7s;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+            .contact-info {
+                p {
+                    a {
+                        color: $white-color;
+                        transition: 0.7s;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy-right-area {
+        background-color: $card-bg;
+    }
+    .faq-section {
+        .panel-group {
+            .panel-title {
+                background-color: $card-bg;
+                a {
+                    &:hover, &.active {
+                        color: $white-color;
+                    }
+                }
+            }
+            .panel-body {
+                background-color: $card-bg;
+            }
+        }
+    }
+    .contact-section {
+        .contact-widget {
+            background-color: $bg-color;
+        }
+    }
+    .signinup-section {
+        .signin-box {
+            background-color: $bg-color;
+            box-shadow: none;
+            .form-group {
+                .users {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .privacy-policy-area {
+        .widget-area {
+            ul {
+                li {
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        .privacy-policy-content {
+            .blockquote {
+                background-color: $bg-color;
+            }
+        }
+    }
+    .faq-area {
+        border-bottom: 1px solid #3c3c3c;
+    }
+    .error-area {
+        .newsletter-form {
+            .form-control  {
+                border: none;
+            }
+        }
+    }
+   
+}
