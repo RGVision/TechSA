@@ -613,5 +613,61 @@ function isValidEmailAddress(emailAddress) {
     // alert( pattern.test(emailAddress) );
     return pattern.test(emailAddress);
 };
+//contact
+$("#msgSubmit").click(function () {
+    var Name = $("#name").val();
+    var Email = $("#email").val();
+    var Subject = $("#subject").val();
+    var Messages = $("#messages").val();
 
+    debugger;
+    check = $("#gridCheck").is(':checked');
+    if (Name && Email && Subject && Messages && check) {
+        var data = {
+            "EntityTypeId": 10486,
+            "Name": Name,
+            "Email": Email,
+            "Subject": Subject,
+            "Messages": Messages,
+        };
+        var Entity =  {
+            "EntityData" : JSON.stringify(data)
+        }
+        var ContactURL = "https://erp.arco.sa/SystemApi/api/v1/entitytype/dynamic/insert"
+         $.ajax({
+            type: 'POST',
+            "headers": {
+                "ClientUserId": "System",
+                "ClientSecretId": "E4A793E4-DC3E-46AB-A01E-AD12BADCA5BD",
+                "Authorization": "Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoicy5oYXNhbiIsIlVzZXJOYW1lIjoicy5oYXNhbiIsIk5hbWUiOiJBYmR1bCBNdWhhaWVtZWVuIiwiRW1wbG95ZWVJZCI6IjMwMiIsIlVzZXJUeXBlIjoiMSIsIkN1c3RvbWVySWQiOiIiLCJFbWFpbCI6Im0uYWJkdWxtdWhhaW1lbkBhcmNvLnNhIiwiTW9iaWxlTnVtYmVyIjoiMDU0MzY5OTM3MiIsImV4cCI6MTY5OTYyMTU2NiwiaXNzIjoiZXJwLmFyY28uY29tIiwiYXVkIjoiZXJwLmFyY28uY29tIn0.V00HlWIhcLEF_vGN-bEn4FObkBOS159DlSx1aiT7HFU"
+            },
+            url: ContactURL,
+            data: Entity,
+            success: function (resultData) {
+                // debugger; alert("Your request has been submitted");
+        
+                // $("#contactForm").hide();
+                swal("Thank You For Contacting Us","","success");
+                
+                
+                $("#name").val("");
+                $("#email").val("");
+                $("#subject").val("");
+                $("messages").val("");
+               
+               
+            },
+            error :function (resultData) { swal("InValid Credential!","","error"); }
+        });
+       
+       
+    }
+    else {
+
+        swal("Please Fill All The Fields!", "", "warning");  
+
+        }
+
+   
+});
 
