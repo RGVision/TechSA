@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       
+        
 
         <!-- title -->
         <title>شركة تيكسا لخدمات الأعمال | TechSA Business Services Co.</title>
@@ -30,14 +30,51 @@
         <link rel="stylesheet" href="assets_TechSA/css/theme-dark.css" />
         <!-- rtl CSS -->
         <link rel="stylesheet" href="assets_TechSA/css/rtl.css" />
-        <!-- sweetalert CSS -->
-        <link rel="stylesheet" href="https://techsa.azurewebsites.net/assets/css/sweetalert.css" />
 
         <!-- favicon -->
         <link rel="icon" href="assets_TechSA/img/logos/favicon.png" type="image/png" sizes="16x16" />
     </head>
 
     <body>
+        <!-- WhatsApp Widget -->
+        <script type="text/javascript">
+            (function () {
+               var options = {
+                whatsapp: "+966554557833", // WhatsApp number
+                whatsapp_color: "#4dc247", // WhatsApp button color
+                whatsapp_label: "WhatsApp", // WhatsApp button label
+                whatsapp_popup_title: "Start a Conversation", // WhatsApp popup title
+                whatsapp_popup_subtitle: "Click one of our members below to chat", // WhatsApp popup subtitle
+                greeting: false, // Greeting message enabled
+                company_logo_url: "//storage.getbutton.io/widget/ce/ced4/ced450cd9e8b53e4ffa3c52b4e863661/logo.png", // URL of company logo (png, jpg, gif)
+                greeting_message: "مرحبا 👋\n يُسعدنا خدمتك وتقديم الإجابة على استفساراتك.\n\n", // Text of greeting message
+                greeting_messengers: true, // Greeting messengers may be 'true' or 'false'
+                greeting_cookie: 86400, // Greeting cookie lifetime
+                greeting_message_delay: 3, // Greeting message delay
+                greeting_agent_name: "خدمة العملاء", // Greeting agent name
+                greeting_agent_position: "online", // Greeting agent position
+                greeting_start_chat_with: "حياك الله، كيف نقدر نخدمك", // Greeting start chat with text
+                greeting_style: "alternative", // Greeting style may be 'classic' or 'alternative'
+                greeting_direction: "column", // Greeting direction may be 'column' or 'row'or 'center'
+                call_to_action: "راسلنا 👋", // Call to action message
+                notification_indicator: false, // Add button notification indicator
+                animation: true, // Animation enabled
+                button_animation: "heartBeat", // Button animation
+                activator_size: 50, // Button size
+                button_shadow: 50, // Button shadow
+                shift_vertical: 50, // Vertical position, px
+                shift_horizontal: 30, // Horizontal position, px
+                domain: "techsa.sa", // site domain
+                key: "BzZUgoRHSKe4sEmIsa6YTw", // pro-widget key
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                })();
+        </script>
+        <!-- /WhatsApp Widget -->
+
         <!-- Start header Area -->
         <header class="navbar-area nav-style-two">
             <!-- menu for mobile device -->
@@ -59,7 +96,7 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link active">الرئيسية صفحة12</a>
+                                    <a href="index.html" class="nav-link active">الرئيسية </a>
                                 <!--</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle active">الرئيسية</a>
@@ -191,6 +228,18 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item" id="m-sign">
+                                    <a href="#" class="nav-link dropdown-toggle"> تسجيل الدخول  </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="Employee-sign-in.html" class="nav-link">الموظف</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="Company-sign-in.html" class="nav-link">الشركة</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
                             </ul>
                             <div class="search-item">
                                 <div class="search-btn">
@@ -200,15 +249,15 @@
                                 <div class="search-overlay search-popup">
                                     <form class="search-form">
                                         <input class="search-input" name="search" placeholder="Search" type="text" />
-                                        <button class="btn btn-solid" type="button">
+                                        <button class="btn btn-solid" type="submit">
                                             <i class="envy envy-magnify-glass"></i>
                                         </button>
                                     </form>
                                 </div>
                             </div>
-                             <div class="cta-btn">
-                                <button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
-                                     تسجيل الدخو  
+                            <div class="cta-btn">
+<button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
+                                    تسجيل الدخول  
                                 </button>
                                 <ul class="dropdown-menu" >
                                   <li><a class="dropdown-item" href="Employee-sign-in.html"><i class="envy envy-user"></i>   الموظف</a></li>
@@ -257,41 +306,45 @@
                         <div class="featured-service-content">
                             <div class="section-title">
                                 <span class="subtitle">خدماتنا</span>
-                                <h2>Custom IT Solutions for Your Successful Business</h2>
-                                <p>Solit is innovative and dynamic software development, outsourcing and consulting company. We have proven success and experience in building Dedi cated Development Teams of different sizes for us.</p>
+                                <h2>الإدارة والاشراف وتوفير الحوكمة والتوجيه والدعم لفريق المشروع</h2>
+                                <p>تعتبر شركة تيكسا ان إدارة المشاريع هي عملية ونشاط وتخطيط وتنظيم وتحفيز ومراقبة الموارد والإجراءات والبروتوكولات لتحقيق أهداف محددة.</p>
+                                <p>المشروع هو مسعى مؤقت يهدف إلى إنتاج منتج فريد أو خدمة أو نتيجة مع بداية ونهاية محددة عادة ما تكون مقيدة بالوقت، وغالبا ما تكون مقيدة بالتمويل أو المنجزات التي يتم تنفيذها لتحقيق الأهداف والغايات من المشروع.</p>
+                                <p>التحدي الرئيسي لإدارة المشروع هو تحقيق جميع أهداف المشروع وأهدافه مع احترام القيود المسبقة. والقيود الرئيسية هي نطاق المشروع، والوقت، والجودة، والميزانية. والتحدي الثانوي والأكثر طموحا هو تحسين توزيع المدخلات الضرورية ودمجها لتحقيق الأهداف المحددة مسبقا.</p>
+                                <p>.</p>
+                                <h6>تيكسا الابتكار والتميز في خدمات الأعمال </h6>
                             </div>
                             <div class="row">
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
-                                    <i class="envy envy-shield"></i>
-                                    <h5>Cyber Security</h5>
-                                    <p>There are many variations of passages of Lorem Ipsum available</p>
+                                    <i class="envy envy-minimize"></i>
+                                    <h5>إدارة المخاطر</h5>
+                                    <p>تعتبر إدارة المخاطر من المعارف الأساسية المطلوبة في إدارة المشاريع وكذلك إدارة عمليات الشركة بشكل عام، وهي من العوامل الحاسمة في نجاح المشروع لأنها تضمن مراقبة المخاطر بشكل صحيح وتخفيفها لتجنب أن تصبح مشكلات تعيق تحقيق اهداف المشروع.</p>
                                     <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
                                         المزيد
                                         <i class="envy envy-right-arrow"></i>
                                     </a>-->
                                 </div>
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
-                                    <i class="envy envy-cpu"></i>
-                                    <h5>Data Analytics</h5>
-                                    <p>There are many variations of passages of Lorem Ipsum available</p>
+                                    <i class="envy envy-target"></i>
+                                    <h5>السيطرة وتحقيق نطاق العمل</h5>
+                                    <p>من خلال خدمات إدارة المشاريع يتم تحقيق نطاق واهداف المشروع بطريقة احترافية مبنية على معايير واسس علمية تضمن صلاحية ومطابقة نتائج المشروع مع ما تطمح له الشركات وأصحاب القرار .</p>
                                     <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
                                         المزيد
                                         <i class="envy envy-right-arrow"></i>
                                     </a>-->
                                 </div>
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
-                                    <i class="envy envy-code"></i>
-                                    <h5>Web Development</h5>
-                                    <p>There are many variations of passages of Lorem Ipsum available</p>
+                                    <i class="envy envy-dashboard"></i>
+                                    <h5>مراقبة الجودة</h5>
+                                    <p>إدارة المشاريع تضمن جودة كل ما يتم تسليمه خلال حياة المشروع، وبما ان المشاريع هي أيضا تقع عادة تحت ضغط هائل ليتم الانتهاء منها في الوقت المحدد حسب الجدول الزمني، ولذلك من الممكن التقليل من أهمية بعض المهام وتضييق الجداول الزمنية مما يسبب نوعية سيئة في التنفيذ.</p>
                                     <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
                                         المزيد
                                         <i class="envy envy-right-arrow"></i>
                                     </a>-->
                                 </div>
                                 <div class="content-inner col-lg-6 col-md-6 col-sm-6">
-                                    <i class="envy envy-global"></i>
-                                    <h5>SEO Optimization</h5>
-                                    <p>There are many variations of passages of Lorem Ipsum available</p>
+                                    <i class="envy envy-money"></i>
+                                    <h5>إدارة فعّالة للتكلفة</h5>
+                                    <p>من الأهداف الرئيسية لإدارة المشاريع التأكد من أن المشروع يقع في حدود الميزانية المحددة، حيث يمكن أن يستغرق وقتًا أطول لتنفيذ المشروع، الوقت هو المال في عالم إدارة المشاريع، إذا لم تتم مراقبة المشروع بشكل صحيح ستضيع الموارد أو يساء استخدامها.</p>
                                     <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
                                         المزيد
                                         <i class="envy envy-right-arrow"></i>
@@ -315,20 +368,20 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 ptb-100">
                         <div class="section-title">
-                            <h2>Get Tips And Tricks To Make Best Use The Product</h2>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</p>
+                            <h2>مزايا إدارة المشاريع في شركة تيكسا:</h2>
+                            <p>نظرا للوضع الحالي فيما يتعلق بالمشاريع حيث أصبحت أكثر تشابكا وتعقيدا مما يعني وجود تنوع كبير في طبيعة وثقافة الافراد العاملين فيها، مما جعل شركة تيكسا تعمل على تصميم واستخدام نماذج وتقنيات وأدوات مختلفة تتناسب مع طبيعة وحجم ونوع المشروع لضمان تحقيق الأهداف الخاصة بكل مشروع على حدى.</p>
                         </div>
                         <div class="tips-list">
                             <ul>
-                                <li>Strategy experience and analytical expertise combine.</li>
-                                <li>Good experience and analytical expertise combine. .</li>
-                                <li>Simple experience and analytical expertise combine.</li>
-                                <li>Strategy experience and analytical expertise combine</li>
-                                <li>Strategy experience and analytical expertise combine. </li>
+                                <li>تعزيز العمل الجماعي والتعاون بين فرق عمل المشروع وخاصة في مشاركة المعرفة والخبرات بينهم.</li>
+                                <li>تقديم الدعم والتوجيه لفرق تنفيذ المشاريع في أي وقت وتحت أي ظرف من الظروف.</li>
+                                <li>وضع منهجية موحدة للمشاركين في المشاريع داخل الشركة مما يحقق توفير الوقت والجهد نحو إنجاز أنشطة المشروع.</li>
+                                <li>تخطيط وتنفيذ احتياجات الفريق من تدريب وتطوير للمهارات.</li>
+                                <li>اختيار أفضل البرمجيات والتطبيقات لمتابعة وإدارة المشاريع وتدريب الموظفين على استخدام نظام برمجي موحد مما يسهل عمليات المتابعة والأرشفة والرجوع إلى البيانات. </li>
                             </ul>
                         </div>
                         <div class="cta-btn">
-                            <a href="#" class="btn btn-solid">إبدأ التجربة  <i class="envy envy-right-arrow"></i></a>
+                            <a href="contact.html" class="btn btn-solid">إبدأ التجربة   <i class="envy envy-right-arrow"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 align-self-end">
@@ -352,18 +405,18 @@
                     </div>
                     <div class="col-lg-6 col-sm-12 ptb-100">
                         <div class="section-title">
-                            <h2>Start From Today To Manage Your Business Smartly</h2>
+                            <h2>تيكسا - إدارة مشاريع فعّالة تحقق أهدافك بنجاح</h2>
                         </div>
                         <div class="about-text-blc">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</p>
+                            <p> تجمع خدمة إدارة المشاريع في تيكسا بين الخبرة والإبتكار لتقديم حلول تحسين كفاءة ونجاح المشاريع. سواء كنت تبدأ مشروعًا جديدًا أو تحتاج إلى إعادة تنظيم لمشروع قائمز تيكسا تتيح لك التركيز على هدفك الرئيسي دون القلق بشأن التفاصيل الإدارية. </p>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="about-feature-blc">
                                     <i class="envy envy-quality blue"></i>
                                     <div class="about-feature-content">
-                                        <h6>The Certified Studio</h6>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                        <h6>الخبرة والاحترافية</h6>
+                                        <p>تتميز تيكسا بفريق من ذوي الخبرة والكفاءة في مجال إدارة المشاريع، حيث يقدم حلول مخصصة تلبي احتياجات مشروعك بدقة. يسعى فريقنا لفهم متطلباتك وتقديم خطة تنفيذ ملائمة لضمان تحقيق النجاح.</p>
                                     </div>
                                 </div>
                             </div>
@@ -371,14 +424,14 @@
                                 <div class="about-feature-blc">
                                     <i class="envy envy-quality red"></i>
                                     <div class="about-feature-content">
-                                        <h6>Award Ceremony</h6>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                                        <h6>تكنولوجيا الابتكار</h6>
+                                        <p>في تيكسا نستخدم أحدث التقنيات والأنظمة في إدارة المشاريع، مما يسهم في زيادة الإنتاجية وتحقيق أفضل النتائج في أقل وقت ممكن. مع خدمة إدارة المشاريع من تيكسا، نؤمن بأن الإبتكار والأحترافية الاساس لتحقيق مشروعاتك بنجاح، مهما كانت تحدياتها. باختيار تيكسا لإدارة مشاريعك، ستحصل على شريك استراتيجي يساعدك على تحقيق النجاح بشكل أفضل وأسرع.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="cta-btn">
-                            <a href="#" class="btn btn-solid">إبدأ التجربة  <i class="envy envy-right-arrow"></i></a>
+                            <a href="contact.html" class="btn btn-solid">إبدأ التجربة  <i class="envy envy-right-arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -399,14 +452,14 @@
                                 </a>
                             </div>
                             <p>شركة تيكسا لخدمات الأعمال من أكثر الشركات نمواً في مجال تشغيل وإدارة المشاريع وتأهيل الكوادر البشرية وتكمن الخبرات الأساسية لدى الشركة في مجالات رئيسة هي: التشغيل؛ إدارة المشاريع، التسويق؛ مراكز الاتصال وخدمة العملاء، استطلاعات الرأي وإجـراءات وعمليات الخدمات التشغيلية.</p>
-                            <!-- <div class="social-link">
+                            <div class="social-link">
                                 <a href="#" class="bg-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-x"></i></a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5 col-sm-6 col-12">
@@ -454,7 +507,7 @@
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:info@techsa.sa">techsa.sa</a>
+                                    <a href="mailTo:info@techsa.sa">info@techsa.sa</a>
                                 </p>
                             </div>
                         </div>
@@ -496,9 +549,7 @@
         <script src="assets_TechSA/js/contact-form-script.js"></script>
         <!-- ajaxchimp JS -->
         <script src="assets_TechSA/js/jquery.ajaxchimp.min.js"></script>
-       <!-- main JS -->
+        <!-- main JS -->
         <script src="assets_TechSA/js/main.js"></script>
-         <!-- sweetalert JS -->
-         <script src="https://techsa.azurewebsites.net/assets/js/sweetalert.min.js"></script>
     </body>
 </html>

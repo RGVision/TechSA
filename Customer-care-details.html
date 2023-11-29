@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       
+        
 
         <!-- title -->
         <title>شركة تيكسا لخدمات الأعمال | TechSA Business Services Co.</title>
@@ -30,14 +30,51 @@
         <link rel="stylesheet" href="assets_TechSA/css/theme-dark.css" />
         <!-- rtl CSS -->
         <link rel="stylesheet" href="assets_TechSA/css/rtl.css" />
-        <!-- sweetalert CSS -->
-        <link rel="stylesheet" href="https://techsa.azurewebsites.net/assets/css/sweetalert.css" />
 
         <!-- favicon -->
         <link rel="icon" href="assets_TechSA/img/logos/favicon.png" type="image/png" sizes="16x16" />
     </head>
 
     <body>
+          <!-- WhatsApp Widget -->
+        <script type="text/javascript">
+            (function () {
+               var options = {
+                whatsapp: "+966554557833", // WhatsApp number
+                whatsapp_color: "#4dc247", // WhatsApp button color
+                whatsapp_label: "WhatsApp", // WhatsApp button label
+                whatsapp_popup_title: "Start a Conversation", // WhatsApp popup title
+                whatsapp_popup_subtitle: "Click one of our members below to chat", // WhatsApp popup subtitle
+                greeting: false, // Greeting message enabled
+                company_logo_url: "//storage.getbutton.io/widget/ce/ced4/ced450cd9e8b53e4ffa3c52b4e863661/logo.png", // URL of company logo (png, jpg, gif)
+                greeting_message: "مرحبا 👋\n يُسعدنا خدمتك وتقديم الإجابة على استفساراتك.\n\n", // Text of greeting message
+                greeting_messengers: true, // Greeting messengers may be 'true' or 'false'
+                greeting_cookie: 86400, // Greeting cookie lifetime
+                greeting_message_delay: 3, // Greeting message delay
+                greeting_agent_name: "خدمة العملاء", // Greeting agent name
+                greeting_agent_position: "online", // Greeting agent position
+                greeting_start_chat_with: "حياك الله، كيف نقدر نخدمك", // Greeting start chat with text
+                greeting_style: "alternative", // Greeting style may be 'classic' or 'alternative'
+                greeting_direction: "column", // Greeting direction may be 'column' or 'row'or 'center'
+                call_to_action: "راسلنا 👋", // Call to action message
+                notification_indicator: false, // Add button notification indicator
+                animation: true, // Animation enabled
+                button_animation: "heartBeat", // Button animation
+                activator_size: 50, // Button size
+                button_shadow: 50, // Button shadow
+                shift_vertical: 50, // Vertical position, px
+                shift_horizontal: 30, // Horizontal position, px
+                domain: "techsa.sa", // site domain
+                key: "BzZUgoRHSKe4sEmIsa6YTw", // pro-widget key
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                })();
+        </script>
+        <!-- /WhatsApp Widget -->   
+
         <!-- Start header Area -->
         <header class="navbar-area nav-style-two">
             <!-- menu for mobile device -->
@@ -47,6 +84,7 @@
                     <img src="assets_TechSA/img/logos/logo_dark.png" alt="logo-dark" />
                 </a>
             </div>
+
             <!-- Menu for desktop device-->
             <div class="main-nav">
                 <nav class="navbar navbar-expand-md navbar-light">
@@ -58,7 +96,7 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link active">الرئيسية صفحة12</a>
+                                    <a href="index.html" class="nav-link active">الرئيسية </a>
                                 <!--</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle active">الرئيسية</a>
@@ -190,6 +228,18 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item" id="m-sign">
+                                    <a href="#" class="nav-link dropdown-toggle"> تسجيل الدخول  </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="Employee-sign-in.html" class="nav-link">الموظف</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="Company-sign-in.html" class="nav-link">الشركة</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
                             </ul>
                             <div class="search-item">
                                 <div class="search-btn">
@@ -199,15 +249,15 @@
                                 <div class="search-overlay search-popup">
                                     <form class="search-form">
                                         <input class="search-input" name="search" placeholder="Search" type="text" />
-                                        <button class="btn btn-solid" type="button">
+                                        <button class="btn btn-solid" type="submit">
                                             <i class="envy envy-magnify-glass"></i>
                                         </button>
                                     </form>
                                 </div>
                             </div>
-                             <div class="cta-btn">
-                                <button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
-                                     تسجيل الدخو  
+                            <div class="cta-btn">
+<button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
+                                    تسجيل الدخول  
                                 </button>
                                 <ul class="dropdown-menu" >
                                   <li><a class="dropdown-item" href="Employee-sign-in.html"><i class="envy envy-user"></i>   الموظف</a></li>
@@ -220,12 +270,18 @@
             </div>
         </header>
         <!-- end header area -->
+
         <!-- start page title area-->
         <div class="page-title-area bg-thin">
             <div class="container">
                 <div class="page-title-content">
-                    <h1>تواصل معنا</h1>
-                   
+                    <h1>العناية بالعملاء</h1>
+                    <ul>
+                        <li class="item"><a href="index.html">الرئيسية</a></li>
+                        <li class="item">
+                            <a href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="shape">
@@ -236,103 +292,200 @@
             </div>
         </div>
         <!-- end page title area -->
-        <section class="contact-section ptb-100 bg-thin">
+
+        <!--start service section-->
+        <section id="featured-service" class="featured-service-section pt-100 pb-70 bg-thin">
             <div class="container">
-                <div class="section-title">
-                    <h2>تواصل معنا</h2>
-                </div>
                 <div class="row">
-                    <div class="col-lg-8 col-sm-12">
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" required="" data-error="Please enter your name" placeholder="الاسم" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control" id="email" required="" data-error="Please enter your email" placeholder="الايميل" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" name="subject" class="form-control" id="subject" required="" data-error="Please enter your phone number" placeholder="الموضوع" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" class="form-control" cols="30" rows="6" required="" data-error="Please enter your message" placeholder="نص الرسالة..."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <div class="form-check agree-label">
-                                            <input
-                                                name="gridCheck"
-                                                value="I agree to the terms and سياسة الخصوصية."
-                                                class="form-check-input"
-                                                type="checkbox"
-                                                id="gridCheck"
-                                                required
-                                            >
-                                            <label class="form-check-label" for="gridCheck">
-                                                اقبل <a href="terms-condition.html">الشروط والأحكام</a> و <a href="privacy-policy.html"> سياسة الخصوصية.</a>
-                                            </label>
-                                            <div class="help-block with-errors gridCheck-error"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <button type="button" class="btn btn-solid">إرسال</button>
-                                    <div id="msgSubmit" class="h5 text-center hidden"></div>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="col-lg-6 col-sm-12 col-md-12 pb-30">
+                        <div class="featured-service-image">
+                            <img src="assets_TechSA/img/resource/service_left.png" alt="service_illustration" />
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="contact-widget">
-                            <div class="info-title">
-                                <h5>معلومات الاتصال</h5>
+                    <div class="col-lg-6 col-sm-12 col-md-12">
+                        <div class="featured-service-content">
+                            <div class="section-title">
+                                <span class="subtitle">خدماتنا</span>
+                                <h2>العناية بالعملاء من اهم العوامل لكسب ثقة العملاء والاحتفاظ بهم </h2>
+                                <p>في تيكسا لخدمات الاعمال يتوفر لدينا الخبرة العالية لإدارة وتطوير خدمات العناية بالعملاء والتشغيل حيث  نعمل على تلبية الرغبات والـتأكد من تزويد عميلنا باحتياجاته العملية باستخدام أفضل الأنظمة والعمل على مواكبة التطوير التقني الداعم لخفض التكلفة ورفع الإنتاجية.</p>
                             </div>
-                            <div class="contact-info">
-                                <i class="envy envy-pin"></i>
-                                <p>3107طريق مكة المكرمة- حي الربوة- الرياض 12813-7901 المملكة العربية السعودية</p>
-                            </div>
-                            <div class="contact-info">
-                                <i class="envy envy-call"></i>
-                                <p>
-                                    <a href="tel:920004962">920004962</a>
-                                </p>
-                                <br>
-                                <!--<p>
-                                    <a href="tel:920004962">920004962</a>
-                                </p> -->
-                            </div>
-                            <div class="contact-info">
-                                <i class="envy envy-plane"></i>
-                                <p>
-                                    <a href="mailTo:info@techsa.sa">techsa.sa</a>
-                                </p>
+                                <h3>أهم مزايا خدمات العناية بالعملاء للشركات </h3>
+                                <p>. </p>
+                            <div class="row">
+                                <div class="content-inner col-lg-6 col-md-6 col-sm-6">
+                                    <i class="envy envy-layout"></i>
+                                    <h5>ترك انطباع مميز عن العلامة التجارية</h5>
+                                    <p>بفضل جهود فريق العناية بالعملاء فإن العميل يكون صورة مميزة في ذهنه عن المنشأة مما يجعلها منشأة مميزة في نظره، ومن ثم سيسعد بتوصية مَن في محيطه بها.</p>
+                                    <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                        المزيد
+                                        <i class="envy envy-right-arrow"></i>
+                                    </a>-->
+                                </div>
+                                <div class="content-inner col-lg-6 col-md-6 col-sm-6">
+                                    <i class="envy envy-smile-1"></i>
+                                    <h5>تعزيز قيمة العميل الدائمة</h5>
+                                    <p> خدمة العملاء المميزة تساعد في إبقاء العميل متصلًا بالمنشأة لأطول فترة ممكنة حيث إن تقديم خدمة عملاء متميزة هو المفتاح للحفاظ على اتصال مطول الأمد مع العميل </p>
+                                    <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                        المزيد
+                                        <i class="envy envy-right-arrow"></i>
+                                    </a>-->
+                                </div>
+                                <div class="content-inner col-lg-6 col-md-6 col-sm-6">
+                                    <i class="envy envy-refresh"></i>
+                                    <h5>تعزيز الجهود التسويقية</h5>
+                                    <p>لأن الشركات تحرص بشكل كبير على تقديم تجربة استثنائية لعملائها، فإن العملاء سيتحولون إلى مسوقين لمنتجات الشركة في حال رضاهم عن الخدمة المقدمة، مما يؤثر بشكل إيجابي على المبيعات والارباح.</p>
+                                    <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                        المزيد
+                                        <i class="envy envy-right-arrow"></i>
+                                    </a>-->
+                                </div>
+                                <div class="content-inner col-lg-6 col-md-6 col-sm-6">
+                                    <i class="envy envy-followers"></i>
+                                    <h5>تأثير خدمة العملاء على المبيعات</h5>
+                                    <p>خدمة العملاء المميزة تترك الأثر الكبير في نفسية العميل مما يجعله مستعدا لإتمام عملية الشراء دون جهود كبيرة من فريق المبيعات الخاص بالشركة.</p>
+                                    <!--<a href="service-details.html" target="_blank" class="btn btn-text-only">
+                                        المزيد
+                                        <i class="envy envy-right-arrow"></i>
+                                    </a>-->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="shape">
+                <img src="assets_TechSA/img/resource/Illustration_Cloud.png" alt="shape" class="shape-inner" />
+                <img src="assets_TechSA/img/resource/Illustration_Settings.png" alt="shape" class="shape-inner" />
+            </div>
+        </section>
+        <!--end service section-->
+
+        <!--start tips section-->
+        <section class="tips-section">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="contact-map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14499.612091367713!2d46.7337157!3d24.6958602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03fb4b3e0313%3A0xeae7885664b80efa!2sRoh%20Qyadh!5e0!3m2!1sen!2ssa!4v1698963161383!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
+                    <div class="col-lg-6 col-sm-12 ptb-100">
+                        <div class="section-title">
+                            <h2>خدمة مراكز الاتصال </h2>
+                            <p>وهي واحدة من أهم الخدمات التي تمتاز بها شركة تيكسا لخدمات الاعمال ، وأهم الخدمات التي تقدمها هذه الوحدة هي</p>
+                        </div>
+                        <div class="tips-list">
+                            <ul>
+                                <li>إنشاء وتجهيز مراكز الاتصال وخدمة العملاء والعناية بالمشتركين.</li>
+                                <li>إدارة وتشغيل مراكز الاتصال وخدمة العملاء والعناية بالمشتركين.</li>
+                                <li>توفير الموارد البشرية المدربة والمؤهلة للعمل في مراكز الاتصال لخدمة العملاء بشكل أفضل.</li>
+                                <li>توفير أنظمة الرد الالي التفاعلي من خلال الصوت والصورة ( IVR  )</li>
+                                <li>توفير أنظمة تسجيل المكالمات. Call Recording System </li>
+                                <li>توفير أنظمة إدارة علاقات العملاء CRM  وتكاملها مع منصة إدارة مراكز الاتصال. </li>
+                                <li>توفير أنظمة إعداد التقارير الخاصة بأداء مراكز الاتصال وشاشات المتابعة. </li>
+                                <li>التدريب المقنن والجودة المستمرة لمراكز الاتصال وخدمة العملاء والعناية بالمشتركين. </li>
+                            </ul>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="contact.html" class="btn btn-solid">إبدأ التجربة  <i class="envy envy-right-arrow"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 align-self-end">
+                        <div class="tips-img">
+                            <img src="assets_TechSA/img/tips_left.png" alt="tips" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!--end tips section-->
+
+         <!--start tips2 section-->
+         <section class="tips-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 ptb-100">
+                        <div class="section-title">
+                            <h2>خدمات العملاء</h2>
+                            <p>خدمة العملاء هي خدمة الدعم والتشغيل ضمن المعايير العالمية لتشغيل مشاريع خدمة العملاء ودمج الأنظمة المطلوبة لتشغيلها، (ادارة علاقات العملاء. استبيانات قياس رضاء العملاء. الجودة والتطوير. التقارير التفصيلية الاحترافية. التواصل المباشر). </p>
+
+                            <P>تمكنك خدمات تشغيل مشاريع خدمة العملاء في شركة تيكسا من الوصول إلى أهدافك باحترافية وذلك من خلال</P>
+                        </div>
+                        <div class="tips-list">
+                            <ul>
+                                <li>الموقع الخاص بتشغيل مشاريع خدمة العملاء.</li>
+                                <li>الموارد البشرية المحترفة والمدربة.</li>
+                                <li>الإدارة المشرفة على التشغيل.</li>
+                                <li>عناصر تشغيل مشاريع خدمة العملاء.</li>
+                                <li>التقنية المستخدمة في تشغيل وإدارة مشاريع خدمة العملاء.</li>
+                                <li>مؤشرات الأداء المتبعة في تشغيل وتنفيذ المشاريع.</li>
+                                <li>بيئة العمل المثالية.</li>
+                            </ul>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="contact.html" class="btn btn-solid">إبدأ التجربة  <i class="envy envy-right-arrow"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 align-self-end">
+                        <div class="tips-img">
+                            <img src="assets_TechSA/img/tips_left.png" alt="tips" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end tips2 section-->
+
+        <!--start about section-->
+        <section id="about" class="about-section about-two bg-thin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="about-img">
+                            <img src="assets_TechSA/img/about/about_left.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 ptb-100">
+                        <div class="section-title">
+                            <h2>مزايا خدمات العناية بالعملاء في شركة تيكسا</h2>
+                        </div>
+                        <div class="about-text-blc">
+                            <p>تلبي تيكسا كافة احتياجات العناية بالعملاء وتعمل على تقديم حلول تقنية اقتصادية تساهم في دعم الاعمال وتطوير خدمات العناية بالعملاء بمعايير عالية الجودة لخلق القيمة التنافسية.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="about-feature-blc">
+                                    <i class="envy envy-quality blue"></i>
+                                    <div class="about-feature-content">
+                                        <h6>التسويق الهاتفي</h6>
+                                        <p>تمكن خدمة المبيعات والتسويق الهاتفي لشركة تيكسا بالوصول إلى شريحة العملاء المستهدفين بطريقة سهلة لتقدم لهم المنتج والخدمة التي تسمح للشركة بزيادة حصتها في السوق.</p>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="about-feature-blc">
+                                    <i class="envy envy-quality red"></i>
+                                    <div class="about-feature-content">
+                                        <h6>المزايا</h6>
+                                        <p>.</p>
+                                        <ul>
+                                            <li>تحقيق المعايير الأساسية للعناية بالعملاء.</li>
+                                            <li>التعامل مع طلبات وشكاوى العملاء باحترافية.</li>
+                                            <li>توفير كادر مختص في العناية بالعملاء.</li>
+                                            <li>توفير المشرفين والمسؤولين المؤهلين.</li>
+                                            <li>تقارير تحليلية شاملة لأصحاب القرار. </li>
+                                            <li>الأنظمة والأجهزة التي تناسب العناية بالعملاء المتميزة. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="contact.html" class="btn btn-solid">إبدأ التجربة  <i class="envy envy-right-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end about section-->
+
+        
 
        <!-- start footer area -->
         <footer class="footer-area pt-100 pb-70">
@@ -347,14 +500,14 @@
                                 </a>
                             </div>
                             <p>شركة تيكسا لخدمات الأعمال من أكثر الشركات نمواً في مجال تشغيل وإدارة المشاريع وتأهيل الكوادر البشرية وتكمن الخبرات الأساسية لدى الشركة في مجالات رئيسة هي: التشغيل؛ إدارة المشاريع، التسويق؛ مراكز الاتصال وخدمة العملاء، استطلاعات الرأي وإجـراءات وعمليات الخدمات التشغيلية.</p>
-                            <!-- <div class="social-link">
+                            <div class="social-link">
                                 <a href="#" class="bg-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-x"></i></a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5 col-sm-6 col-12">
@@ -402,7 +555,7 @@
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:info@techsa.sa">techsa.sa</a>
+                                    <a href="mailTo:info@techsa.sa">info@techsa.sa</a>
                                 </p>
                             </div>
                         </div>
@@ -444,9 +597,7 @@
         <script src="assets_TechSA/js/contact-form-script.js"></script>
         <!-- ajaxchimp JS -->
         <script src="assets_TechSA/js/jquery.ajaxchimp.min.js"></script>
-       <!-- main JS -->
+        <!-- main JS -->
         <script src="assets_TechSA/js/main.js"></script>
-         <!-- sweetalert JS -->
-         <script src="https://techsa.azurewebsites.net/assets/js/sweetalert.min.js"></script>
     </body>
 </html>

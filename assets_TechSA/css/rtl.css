@@ -99,6 +99,7 @@
   color: #6610f2;
   background-color: transparent !important;
 }
+
 .navbar-area .main-nav .dropdown-toggle::after {
   margin-right: 6px;
   margin-left: 0 !important;
@@ -109,6 +110,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .navbar-area .cta-btn i {
   display: inline-block;
 }

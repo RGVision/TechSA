@@ -254,7 +254,7 @@ jQuery(function($) {
 
     // AJAX MailChimp
     $('.newsletter-form').ajaxChimp({
-        url: 'https://hibootstrap.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9', // Your url MailChimp
+        url: 'https://rohqyadh.us21.list-manage.com/subscribe/post?u=f7622fa755b67fa5d8c2cca38&amp;id=60826b4669&amp;f_id=0065e9e6f0', // Your url MailChimp
         callback: callbackFunction
     });
 
@@ -271,6 +271,14 @@ jQuery(function($) {
 	$('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
 }(jQuery));
 
+
+var serverUrl = location.host;
+if(!location.host || location.host !="techsa.sa"){
+    serverUrl = "techsa.azurewebsites.net/";
+}
+
+
+var Erpsystem = "https://erp.arco.sa/SystemApi/";
 
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
@@ -308,9 +316,7 @@ $("#can_register").click(function () {
 
 
         if (isValidEmailAddress($("#can_email").val()) && check) {
-            if (validator.checkAllReg($("#" + formid)))
-            {
-
+           
             $("#can_register").css("pointer-events", "none");
             var employee = {
                 Name: $("#can_name").val(),
@@ -335,13 +341,27 @@ $("#can_register").click(function () {
 
             $.ajax({
                 type: 'POST',
-                url: "https://techsa.azurewebsites.net/api/RegisterEmployee?_Employee=" + jdata,
+                url: "https://"+serverUrl+"/api/RegisterEmployee?_Employee=" + jdata,
                 // data: { _Employee: jdata },
 
                 success: function (data, textStatus, xhr) {
              
                     //if(data.status)
-               
+                    $("#can_name").val("");
+                    $("#can_name").val("");
+                    $("#can_mobile").val("");
+                    $("#can_email").val("");
+                    $("#can_pass").val("");
+                    $("#can_Nationalid").val("");
+                    $("#can_familyname").val("");
+                    $("#can_mentionthetraining").val("");
+                    $("#can_howmanyyears").val("");
+                    $("#can_tac2").val("");
+                    $("#can_specialization").val("");
+                    $("#can_education").val("");
+                    $("#can_placeofresidence").val("");
+
+
                     if (data.status == true) {
                         debugger;
                         var data1 = new FormData();
@@ -369,7 +389,9 @@ $("#can_register").click(function () {
                                 $("#user_loginm").val(data.UserName);
                                 $("#user_passm").val(data.PassWord);
 
-                                $("#loginEmployee").click();
+                                swal("Employee Register successsfully","","success");
+                                // $("#loginEmployee").click();
+
                             }
                             function errorFunc2(data, Status) {
                                 alert('error');
@@ -377,9 +399,10 @@ $("#can_register").click(function () {
 
                         }
                         else {
+                            swal(data.msg);
                             $("#user_loginm").val(data.UserName);
                             $("#user_passm").val(data.PassWord);
-                            $("#loginEmployee").click();
+                            // $("#loginEmployee").click();
                         }
 
                     }
@@ -397,7 +420,7 @@ $("#can_register").click(function () {
 
                 },
             });
-        }
+        
         }
         else {
 
@@ -445,10 +468,10 @@ $("#loginEmployee").click(function () {
     $(this).parent().parent("form").addClass("form-submitted");
 
     var JobId = $("#selectdjobid").val();
-    var loginurl = "https://techsa.azurewebsites.net/Account/LoginByType?log=" + $("#user_loginm").val() + "&pwd=" + $("#user_passm").val() + "&Utype=" + 5;
+    var loginurl = "https://"+serverUrl+"/Account/LoginByType?log=" + $("#user_loginm").val() + "&pwd=" + $("#user_passm").val() + "&Utype=" + 5;
     
     if (JobId && JobId.length > 0) {
-        loginurl = "https://techsa.azurewebsites.net/Account/LoginByType?log=" + $("#user_loginm").val() + "&pwd=" + $("#user_passm").val() + "&Utype=" + 5 + "&JobId=" + JobId;
+        loginurl = "https://"+serverUrl+"/Account/LoginByType?log=" + $("#user_loginm").val() + "&pwd=" + $("#user_passm").val() + "&Utype=" + 5 + "&JobId=" + JobId;
     }
 
     if ($("#user_loginm").val() != "" && $("#user_passm").val() != "") {
@@ -465,7 +488,7 @@ $("#loginEmployee").click(function () {
             success: function (data, textStatus, xhr) {
                 $("#loginEmployee").css("pointer-events", "initial");
                 if (data.status == true) {
-                    window.location.replace("https://techsa.azurewebsites.net/"+data.GotoUrl);
+                    window.location.replace("https://"+serverUrl+"/"+data.GotoUrl);
                 } else {
                     if (data.msg) {
                         $("#show-employee-data").html(data.msg);
@@ -504,14 +527,14 @@ $("#loginCustomer").click(function () {
         $("#loginCustomer").css("pointer-events", "none");
         $.ajax({
             type: 'POST',
-            url: "https://techsa.azurewebsites.net/Account/LoginByType?log=" + $("#user_login").val() + "&pwd=" + $("#user_pass").val() + "&Utype=" + 4,
+            url: "https://"+serverUrl+"/Account/LoginByType?log=" + $("#user_login").val() + "&pwd=" + $("#user_pass").val() + "&Utype=" + 4,
             // data: { log: $("#user_login").val(), pwd: $("#user_pass").val() },
 
             success: function (data, textStatus, xhr) {
                 $("#loginCustomer").css("pointer-events", "initial");
                 debugger;
                 if (data.status == true) {
-                    window.location.replace("https://techsa.azurewebsites.net/"+data.GotoUrl);
+                    window.location.replace("https://"+serverUrl+"/"+data.GotoUrl);
                 }
                 else {
                     swal("InValid Credential!","","error")
@@ -549,19 +572,28 @@ $("#emp_register").click(function () {
                 CompanyName: $("#emp_copname").val(),
                 Website: "",
                 Password: $("#emp_pass").val(),
+                NationalId: $("#emp_nationalid").val(),
             };
 
             var jdata = JSON.stringify(customer);
 
             $.ajax({
                 type: 'POST',
-                url: "https://techsa.azurewebsites.net/api/RegisterCustomer?_Customer=" + jdata,
+                url: "https://"+serverUrl+"/api/RegisterCustomer?_Customer=" + jdata,
                 //data: { _Customer: jdata },
 
                 success: function (data, textStatus, xhr) {
                     debugger;
-                    //if(data.status)
+                   
                     swal(data.msg);
+                    if (data.status) {
+                        $("#emp_name").val("")
+                        $("#emp_mobile").val("");
+                        $("#emp_email").val("");
+                        $("#emp_copname").val("");
+                        $("#emp_pass").val("");
+                        $("#emp_nationalid").val("");
+                    }
                     $("#emp_register").css("pointer-events", "initial");
 
                 },
@@ -614,7 +646,7 @@ function isValidEmailAddress(emailAddress) {
     return pattern.test(emailAddress);
 };
 //contact
-$("#msgSubmit").click(function () {
+$("#msgSubmit1").click(function () {
     var Name = $("#name").val();
     var Email = $("#email").val();
     var Subject = $("#subject").val();
@@ -633,7 +665,7 @@ $("#msgSubmit").click(function () {
         var Entity =  {
             "EntityData" : JSON.stringify(data)
         }
-        var ContactURL = "https://erp.arco.sa/SystemApi/api/v1/entitytype/dynamic/insert"
+        var ContactURL = Erpsystem+"/api/v1/entitytype/dynamic/insert"
          $.ajax({
             type: 'POST',
             "headers": {
@@ -670,4 +702,5 @@ $("#msgSubmit").click(function () {
 
    
 });
+
 

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       
+        
 
         <!-- title -->
         <title>شركة تيكسا لخدمات الأعمال | TechSA Business Services Co.</title>
@@ -31,13 +31,53 @@
         <!-- rtl CSS -->
         <link rel="stylesheet" href="assets_TechSA/css/rtl.css" />
         <!-- sweetalert CSS -->
-        <link rel="stylesheet" href="https://techsa.azurewebsites.net/assets/css/sweetalert.css" />
+        <link rel="stylesheet" href="assets_TechSA/css/sweetalert.css" />
 
         <!-- favicon -->
         <link rel="icon" href="assets_TechSA/img/logos/favicon.png" type="image/png" sizes="16x16" />
     </head>
 
     <body>
+
+        <!-- WhatsApp Widget -->
+        <script type="text/javascript">
+            (function () {
+               var options = {
+                whatsapp: "+966554557833", // WhatsApp number
+                whatsapp_color: "#4dc247", // WhatsApp button color
+                whatsapp_label: "WhatsApp", // WhatsApp button label
+                whatsapp_popup_title: "Start a Conversation", // WhatsApp popup title
+                whatsapp_popup_subtitle: "Click one of our members below to chat", // WhatsApp popup subtitle
+                greeting: false, // Greeting message enabled
+                company_logo_url: "//storage.getbutton.io/widget/ce/ced4/ced450cd9e8b53e4ffa3c52b4e863661/logo.png", // URL of company logo (png, jpg, gif)
+                greeting_message: "مرحبا 👋\n يُسعدنا خدمتك وتقديم الإجابة على استفساراتك.\n\n", // Text of greeting message
+                greeting_messengers: true, // Greeting messengers may be 'true' or 'false'
+                greeting_cookie: 86400, // Greeting cookie lifetime
+                greeting_message_delay: 3, // Greeting message delay
+                greeting_agent_name: "خدمة العملاء", // Greeting agent name
+                greeting_agent_position: "online", // Greeting agent position
+                greeting_start_chat_with: "حياك الله، كيف نقدر نخدمك", // Greeting start chat with text
+                greeting_style: "alternative", // Greeting style may be 'classic' or 'alternative'
+                greeting_direction: "column", // Greeting direction may be 'column' or 'row'or 'center'
+                call_to_action: "راسلنا 👋", // Call to action message
+                notification_indicator: false, // Add button notification indicator
+                animation: true, // Animation enabled
+                button_animation: "heartBeat", // Button animation
+                activator_size: 50, // Button size
+                button_shadow: 50, // Button shadow
+                shift_vertical: 50, // Vertical position, px
+                shift_horizontal: 30, // Horizontal position, px
+                domain: "techsa.sa", // site domain
+                key: "BzZUgoRHSKe4sEmIsa6YTw", // pro-widget key
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                })();
+        </script>
+        <!-- /WhatsApp Widget -->
+
         <!-- Start header Area -->
         <header class="navbar-area nav-style-two">
             <!-- menu for mobile device -->
@@ -59,7 +99,7 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link active">الرئيسية صفحة12</a>
+                                    <a href="index.html" class="nav-link active">الرئيسية </a>
                                 <!--</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle active">الرئيسية</a>
@@ -191,6 +231,18 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item" id="m-sign">
+                                    <a href="#" class="nav-link dropdown-toggle"> تسجيل الدخول  </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="Employee-sign-in.html" class="nav-link">الموظف</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="Company-sign-in.html" class="nav-link">الشركة</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
                             </ul>
                             <div class="search-item">
                                 <div class="search-btn">
@@ -200,15 +252,15 @@
                                 <div class="search-overlay search-popup">
                                     <form class="search-form">
                                         <input class="search-input" name="search" placeholder="Search" type="text" />
-                                        <button class="btn btn-solid" type="button">
+                                        <button class="btn btn-solid" type="submit">
                                             <i class="envy envy-magnify-glass"></i>
                                         </button>
                                     </form>
                                 </div>
                             </div>
-                             <div class="cta-btn">
-                                <button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
-                                     تسجيل الدخو  
+                            <div class="cta-btn">
+<button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
+                                    تسجيل الدخول  
                                 </button>
                                 <ul class="dropdown-menu" >
                                   <li><a class="dropdown-item" href="Employee-sign-in.html"><i class="envy envy-user"></i>   الموظف</a></li>
@@ -241,6 +293,7 @@
 
         <!-- start faq section -->
         
+        
         <section class="faq-area pt-100 pb-70 bg-thin">
             <div class="container">
                 <div class="row">
@@ -255,70 +308,105 @@
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>What happens to my data?</h4>
+                            <h4>ما هو العمل عن بعد الذي تقدمه شركة تيكسا لخدمات الأعمال؟</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>الاجابة:</strong> برنامج العمل عن بعد هو أحد المبادرات الوطنية المهمة التي أطلقتها وزارة الموارد البشرية والتنمية الاجتماعية بهدف تجسير الفجوة بين أصحاب الأعمال والباحثين عنها، الذين تحول عدة عوائق بينهم وبين حصولهم على فرص العمل المناسب.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>Why my card payment is failing?</h4>
+                            <h4>ما هي الفئات التي يمكنها الانضمام لبرنامج العمل عن بعد؟</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>الاجابة:</strong> برنامج العمل عن بعد متاح لجميع الفئات من الإناث والذكور وذوي الإعاقة.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>What if I pick the wrong plan?</h4>
+                            <h4>هل هنالك أي رسوم للتعاقد مع شركة تيكسا لخدمة برنامج العمل عن بعد؟</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>الاجابة:</strong> <div class="users">نعم، هنالك رسوم للتعاقد مع (مزود الخدمة) شركة تيكسا لخدمة  العمل عن بعد ولمعرفة الباقات المقدمة إظغط  .    <a href="teleworks-details.html"> هنا</a></div>
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>What happens to my data if I cancel?</h4>
+                            <h4>ما هو دور مزودي الخدمات (شركة تيكسا) في برنامج العمل بعد؟</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>الاجابة:</strong>
+                                 <div class="tips-list">
+                                    <ul>
+                                        <li> الربط مع بوابة العمل عن بعد</li>
+                                        <li> توفير أنظمة وقياس الإنتاجية.</li>
+                                        <li> تقديم تقارير شهرية عن المسجلين في العمل عن بعد.</li>
+                                        <li> أي  خدمة إضافية خاصة ببرنامج العمل عن بعد</li>
+                                        <li> استقطاب وتدريب العاملين.</li>
+                                        <li> تقديم الخبرة التقنية والتشغيلية لدعم أصحاب الأعمال</li>
+                                    </ul>
+                                </div>
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>If I have questions, where?</h4>
+                            <h4>هل هنالك عمر محدد للإنضمام للبرنامج كعامل عن بعد؟</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>الاجابة:</strong> نعم، برنامج العمل عن بعد مخصص للسعوديين من عمر 18 إلى 60 سنة.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>What is content marketing?</h4>
+                            <h4>ما هي نوعية الوظائف التي يمكن ان تكون عمل عن بعد؟</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>الاجابة:</strong> أي وظيفة يمكن تأديتها عبر وسائل الاتصال وتقنية المعلومات ودون الحاجة للحضور لمقر العمل، مثل: المترجم، البرمجة، خدمة العملاء، مندوب المبيعات، إدخال البيانات وغيرها
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6">
                         <div class="faq-item">
-                            <h4>Do I need a blog fo research?</h4>
+                            <h4>هل يمكن لأي نوع من الشركات الانضمام إلى برنامج العمل عن بعد؟</h4>
                             <p>
-                                <strong>A:</strong> We help companies generate real results today and build a strategy that will endure well into the future. Zircona advanced manufacturing experts provide your company with deep experience
-                                in the aerospace.
+                                <strong>الاجابة:</strong> نعم، يمكن لشركات مختلفة من جميع القطاعات الانضمام إلى برنامج العمل عن بعد، سواء كانت صغيرة أو كبيرة، شركة تقنية أو خدمات.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4>هل توفر تيكسا دعمًا فنيًا لأصحاب الأعمال خلال استخدام برنامج العمل عن بعد؟</h4>
+                            <p>
+                                <strong>الاجابة:</strong> نعم، تقدم تيكسا دعمًا فنيًا مستمرًا لأصحاب الأعمال لضمان سهولة التسجيل والاستخدام الفعّال لبرنامج العمل عن بُعد.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4>هل يمكن للشركات الصغيرة الاستفادة من برنامج العمل عن بُعد بنفس الطريقة التي تستفيد منها الشركات الكبيرة؟</h4>
+                            <p>
+                                <strong>الاجابة:</strong> نعم، برنامج العمل عن بُعد يوفر فرصًا متساوية للشركات بغض النظر عن حجمها. يمكن للشركات الصغيرة الاستفادة من مزايا إدارة الموارد وتحسين الإنتاجية بنفس القدر الذي يمكن للشركات الكبيرة الاستفادة منها.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4>هل توفر شركة تيكسا خيارات مختلفة للشركات للتعاقد في برنامج العمل عن بعد ؟</h4>
+                            <p>
+                                <strong>الاجابة:</strong> نعم، تقدم شركة تيكسا خيارات متنوعة للتعاقد في برنامج العمل عن بُعد بناءً على احتياجات الشركة، مع باقات مختلفة تناسب متطلبات الأعمال المختلفة.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq-item">
+                            <h4>هل توفر شركة تيكسا أدوات لتحليل أداء الموظفين والمشاريع لخدمة العمل عن بعد ؟</h4>
+                            <p>
+                                <strong>الاجابة:</strong> نعم، تقدم شركة تيكسا لخدمة العمل عن بُعد أدوات تحليل متقدمة لقياس أداء الموظفين والمشاريع، مما يساعد الشركات في اتخاذ قرارات مستنيرة وتحسين فعالية العمل.
                             </p>
                         </div>
                     </div>
@@ -328,7 +416,7 @@
         <!-- end faq section -->
 
         <!--start about section-->
-        <section id="about" class="about-section pt-100 pb-70">
+        <!-- <section id="about" class="about-section pt-100 pb-70">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 mb-5">
@@ -375,8 +463,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!--end about section-->
+        </section>-->
+        <!--end about section--> 
+    
 
         <!-- start footer area -->
         <footer class="footer-area pt-100 pb-70 bg-white">
@@ -391,14 +480,14 @@
                                 </a>
                             </div>
                             <p>شركة تيكسا لخدمات الأعمال من أكثر الشركات نمواً في مجال تشغيل وإدارة المشاريع وتأهيل الكوادر البشرية وتكمن الخبرات الأساسية لدى الشركة في مجالات رئيسة هي: التشغيل؛ إدارة المشاريع، التسويق؛ مراكز الاتصال وخدمة العملاء، استطلاعات الرأي وإجـراءات وعمليات الخدمات التشغيلية.</p>
-                            <!-- <div class="social-link">
+                            <div class="social-link">
                                 <a href="#" class="bg-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-x"></i></a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5 col-sm-6 col-12">
@@ -446,7 +535,7 @@
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:info@techsa.sa">techsa.sa</a>
+                                    <a href="mailTo:info@techsa.sa">info@techsa.sa</a>
                                 </p>
                             </div>
                         </div>
@@ -488,9 +577,7 @@
         <script src="assets_TechSA/js/contact-form-script.js"></script>
         <!-- ajaxchimp JS -->
         <script src="assets_TechSA/js/jquery.ajaxchimp.min.js"></script>
-       <!-- main JS -->
+        <!-- main JS -->
         <script src="assets_TechSA/js/main.js"></script>
-         <!-- sweetalert JS -->
-         <script src="https://techsa.azurewebsites.net/assets/js/sweetalert.min.js"></script>
     </body>
 </html>

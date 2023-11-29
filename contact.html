@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       
+        <meta name="description" content="Author: HiBootstrap Theme, Category: IT, Multipurpose, HTML, SASS" />
 
         <!-- title -->
         <title>شركة تيكسا لخدمات الأعمال | TechSA Business Services Co.</title>
@@ -31,13 +31,54 @@
         <!-- rtl CSS -->
         <link rel="stylesheet" href="assets_TechSA/css/rtl.css" />
         <!-- sweetalert CSS -->
-        <link rel="stylesheet" href="https://techsa.azurewebsites.net/assets/css/sweetalert.css" />
+        <link rel="stylesheet" href="assets_TechSA/css/sweetalert.css" />
 
         <!-- favicon -->
         <link rel="icon" href="assets_TechSA/img/logos/favicon.png" type="image/png" sizes="16x16" />
     </head>
 
     <body>
+
+         <!-- WhatsApp Widget -->
+        <script type="text/javascript">
+            (function () {
+               var options = {
+                whatsapp: "+966554557833", // WhatsApp number
+                whatsapp_color: "#4dc247", // WhatsApp button color
+                whatsapp_label: "WhatsApp", // WhatsApp button label
+                whatsapp_popup_title: "Start a Conversation", // WhatsApp popup title
+                whatsapp_popup_subtitle: "Click one of our members below to chat", // WhatsApp popup subtitle
+                greeting: true, // Greeting message enabled
+                company_logo_url: "//storage.getbutton.io/widget/ce/ced4/ced450cd9e8b53e4ffa3c52b4e863661/logo.png", // URL of company logo (png, jpg, gif)
+                greeting_message: "مرحبا 👋\n يُسعدنا خدمتك وتقديم الإجابة على استفساراتك.\n\n", // Text of greeting message
+                greeting_messengers: true, // Greeting messengers may be 'true' or 'false'
+                greeting_cookie: 86400, // Greeting cookie lifetime
+                greeting_message_delay: 3, // Greeting message delay
+                greeting_agent_name: "خدمة العملاء", // Greeting agent name
+                greeting_agent_position: "online", // Greeting agent position
+                greeting_start_chat_with: "حياك الله، كيف نقدر نخدمك", // Greeting start chat with text
+                greeting_style: "alternative", // Greeting style may be 'classic' or 'alternative'
+                greeting_direction: "column", // Greeting direction may be 'column' or 'row'or 'center'
+                call_to_action: "راسلنا 👋", // Call to action message
+                notification_indicator: false, // Add button notification indicator
+                animation: true, // Animation enabled
+                button_animation: "heartBeat", // Button animation
+                activator_size: 50, // Button size
+                button_shadow: 50, // Button shadow
+                shift_vertical: 50, // Vertical position, px
+                shift_horizontal: 30, // Horizontal position, px
+                domain: "techsa.sa", // site domain
+                key: "BzZUgoRHSKe4sEmIsa6YTw", // pro-widget key
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                })();
+        </script>
+            <!-- /WhatsApp Widget -->
+
+
         <!-- Start header Area -->
         <header class="navbar-area nav-style-two">
             <!-- menu for mobile device -->
@@ -58,7 +99,7 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link active">الرئيسية صفحة12</a>
+                                    <a href="index.html" class="nav-link active">الرئيسية </a>
                                 <!--</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle active">الرئيسية</a>
@@ -190,6 +231,18 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item" id="m-sign">
+                                    <a href="#" class="nav-link dropdown-toggle"> تسجيل الدخول  </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="Employee-sign-in.html" class="nav-link">الموظف</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="Company-sign-in.html" class="nav-link">الشركة</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
                             </ul>
                             <div class="search-item">
                                 <div class="search-btn">
@@ -199,15 +252,15 @@
                                 <div class="search-overlay search-popup">
                                     <form class="search-form">
                                         <input class="search-input" name="search" placeholder="Search" type="text" />
-                                        <button class="btn btn-solid" type="button">
+                                        <button class="btn btn-solid" type="submit">
                                             <i class="envy envy-magnify-glass"></i>
                                         </button>
                                     </form>
                                 </div>
                             </div>
-                             <div class="cta-btn">
+                            <div class="cta-btn">
                                 <button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
-                                     تسجيل الدخو  
+                                    تسجيل الدخول  
                                 </button>
                                 <ul class="dropdown-menu" >
                                   <li><a class="dropdown-item" href="Employee-sign-in.html"><i class="envy envy-user"></i>   الموظف</a></li>
@@ -247,25 +300,25 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="Name" class="form-control" id="name" required="" data-error="Please enter your name" placeholder="الاسم" />
+                                        <input type="text" name="name" class="form-control" id="name" required="" data-error="Please enter your name" placeholder="الاسم" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="email" name="Email" class="form-control" id="email" required="" data-error="Please enter your email" placeholder="الايميل" />
+                                        <input type="email" name="email" class="form-control" id="email" required="" data-error="Please enter your email" placeholder="الايميل" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="Subject" class="form-control" id="subject" required="" data-error="Please enter your phone number" placeholder="الموضوع" />
+                                        <input type="text" name="subject" class="form-control" id="subject" required="" data-error="Please enter your phone number" placeholder="الموضوع" />
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <textarea name="Messages" id="messages" class="form-control" cols="30" rows="6" required="" data-error="Please enter your message" placeholder="نص الرسالة..."></textarea>
+                                        <textarea name="message" id="message" class="form-control" cols="30" rows="6" required="" data-error="Please enter your message" placeholder="نص الرسالة..."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -288,7 +341,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
-                                    <button type="button" class="btn btn-solid" id="msgSubmit">إرسال</button>
+                                    <button type="submit" class="btn btn-solid">إرسال</button>
+                                    <div id="msgSubmit" class="h5 text-center hidden"></div>
                                 </div>
                             </div>
                         </form>
@@ -308,14 +362,23 @@
                                     <a href="tel:920004962">920004962</a>
                                 </p>
                                 <br>
-                                <!--<p>
-                                    <a href="tel:920004962">920004962</a>
-                                </p> -->
+                            </div>
+                            <div class="contact-info">
+                                <i class="fab fa-whatsapp"></i>
+                                <p>
+                                    <a href="tel:920004962">966554557833+</a>
+                                </p>
+                            </div>
+                            <div class="contact-info">
+                                <i class="fab fa-whatsapp"></i>
+                                <p>
+                                    <a href="tel:920004962">966582761285+</a>
+                                </p>
                             </div>
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:info@techsa.sa">techsa.sa</a>
+                                    <a href="mailTo:info@techsa.sa">info@techsa.sa</a>
                                 </p>
                             </div>
                         </div>
@@ -346,14 +409,14 @@
                                 </a>
                             </div>
                             <p>شركة تيكسا لخدمات الأعمال من أكثر الشركات نمواً في مجال تشغيل وإدارة المشاريع وتأهيل الكوادر البشرية وتكمن الخبرات الأساسية لدى الشركة في مجالات رئيسة هي: التشغيل؛ إدارة المشاريع، التسويق؛ مراكز الاتصال وخدمة العملاء، استطلاعات الرأي وإجـراءات وعمليات الخدمات التشغيلية.</p>
-                            <!--  <div class="social-link">
+                            <div class="social-link">
                                 <a href="#" class="bg-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-x"></i></a>
-                            </div> --> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5 col-sm-6 col-12">
@@ -401,7 +464,7 @@
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:info@techsa.sa">techsa.sa</a>
+                                    <a href="mailTo:info@techsa.sa">info@techsa.sa</a>
                                 </p>
                             </div>
                         </div>
@@ -443,9 +506,10 @@
         <script src="assets_TechSA/js/contact-form-script.js"></script>
         <!-- ajaxchimp JS -->
         <script src="assets_TechSA/js/jquery.ajaxchimp.min.js"></script>
-       <!-- main JS -->
+        <!-- main JS -->
         <script src="assets_TechSA/js/main.js"></script>
-         <!-- sweetalert JS -->
-         <script src="https://techsa.azurewebsites.net/assets/js/sweetalert.min.js"></script>
+        <!-- sweetalert JS -->
+        <script src="assets_TechSA/js/sweetalert.min.js"></script>
+
     </body>
 </html>

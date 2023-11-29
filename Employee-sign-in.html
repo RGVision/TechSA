@@ -31,11 +31,8 @@
        <!-- rtl CSS -->
         <link rel="stylesheet" href="assets_TechSA/css/rtl.css" />
         <!-- sweetalert CSS -->
-        <link rel="stylesheet" href="https://techsa.azurewebsites.net/assets/css/sweetalert.css" />       
-        <!-- sweetalert CSS -->
-        <link rel="stylesheet" href="https://techsa.azurewebsites.net/assets/css/sweetalert.css" />      
-        
-
+        <link rel="stylesheet" href="assets_TechSA/css/sweetalert.css" />       
+ 
 
         <!-- favicon -->
         <link rel="icon" href="assets_TechSA/img/logos/favicon.png" type="image/png" sizes="16x16" />
@@ -51,7 +48,6 @@
                     <img src="assets_TechSA/img/logos/logo_dark.png" alt="logo-dark" />
                 </a>
             </div>
-
             <!-- Menu for desktop device-->
             <div class="main-nav">
                 <nav class="navbar navbar-expand-md navbar-light">
@@ -63,7 +59,7 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link active">الرئيسية صفحة12</a>
+                                    <a href="index.html" class="nav-link active">الرئيسية </a>
                                 <!--</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle active">الرئيسية</a>
@@ -195,6 +191,18 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item" id="m-sign">
+                                    <a href="#" class="nav-link dropdown-toggle"> تسجيل الدخول  </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="Employee-sign-in.html" class="nav-link">الموظف</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="Company-sign-in.html" class="nav-link">الشركة</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
                             </ul>
                             <div class="search-item">
                                 <div class="search-btn">
@@ -204,15 +212,15 @@
                                 <div class="search-overlay search-popup">
                                     <form class="search-form">
                                         <input class="search-input" name="search" placeholder="Search" type="text" />
-                                        <button class="btn btn-solid" type="button">
+                                        <button class="btn btn-solid" type="submit">
                                             <i class="envy envy-magnify-glass"></i>
                                         </button>
                                     </form>
                                 </div>
                             </div>
                             <div class="cta-btn">
-                                <button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
-                                     تسجيل الدخو  
+<button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
+                                    تسجيل الدخول  
                                 </button>
                                 <ul class="dropdown-menu" >
                                   <li><a class="dropdown-item" href="Employee-sign-in.html"><i class="envy envy-user"></i>   الموظف</a></li>
@@ -274,14 +282,14 @@
                         </div>
                         <input type="hidden" id="selectdjobid" value="">
                          <div class="form-group col-lg-12">
-                            <!-- <div class="social-link">
+                            <div class="social-link">
                                 <a href="#" class="bg-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-x"></i></a>
-                            </div> -->
+                            </div>
                         </div> 
                         <div class="form-group col-lg-12">
                             <div class="users">مستخدم جديد? <a href="Employee-sign-up.html">انشاء حساب </a></div>
@@ -305,14 +313,14 @@
                                 </a>
                             </div>
                             <p>شركة تيكسا لخدمات الأعمال من أكثر الشركات نمواً في مجال تشغيل وإدارة المشاريع وتأهيل الكوادر البشرية وتكمن الخبرات الأساسية لدى الشركة في مجالات رئيسة هي: التشغيل؛ إدارة المشاريع، التسويق؛ مراكز الاتصال وخدمة العملاء، استطلاعات الرأي وإجـراءات وعمليات الخدمات التشغيلية.</p>
-                            <!--  <div class="social-link">
+                            <div class="social-link">
                                 <a href="#" class="bg-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-x"></i></a>
-                            </div> --> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5 col-sm-6 col-12">
@@ -402,10 +410,12 @@
         <script src="assets_TechSA/js/contact-form-script.js"></script>
         <!-- ajaxchimp JS -->
         <script src="assets_TechSA/js/jquery.ajaxchimp.min.js"></script>
-       <!-- main JS -->
-        <script src="assets_TechSA/js/main.js"></script>
+       <!-- validator JS -->
+        <script src="assets_TechSA/js/validator.js"></script>
+               <!-- main JS -->
+               <script src="assets_TechSA/js/main.js"></script>
          <!-- sweetalert JS -->
-         <script src="https://techsa.azurewebsites.net/assets/js/sweetalert.min.js"></script>
+         <script src="assets_TechSA/js/sweetalert.min.js"></script>
 
     </body>
 </html>

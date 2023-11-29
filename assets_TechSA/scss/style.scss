@@ -3988,11 +3988,11 @@ img {
     &:hover {
       img {
         &:first-child {
-          display: block;
+          display: none;
         }
 
         &:last-child {
-          display: none;
+          display: block;
         }
       }
     }
@@ -5409,7 +5409,11 @@ img {
     }
   }
 }
-
+@media (min-width:991.97px){
+  #m-sign{
+    display: none;
+  }
+}
 @media (max-width: 991.98px) {
   .navbar-area {
     .top-nav {

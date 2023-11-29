@@ -3526,11 +3526,11 @@ img {
 }
 
 .partner-area .partner-item:hover img:first-child {
-  display: block;
+  display: none;
 }
 
 .partner-area .partner-item:hover img:last-child {
-  display: none;
+  display: block;
 }
 
 /*================================================
@@ -4903,7 +4903,11 @@ img {
   width: 40px;
   border-radius: 30px;
 }
-
+@media (min-width:991.97px){
+  #m-sign{
+    display: none;
+  }
+}
 @media (max-width: 991.98px) {
   .navbar-area .top-nav {
     display: none;

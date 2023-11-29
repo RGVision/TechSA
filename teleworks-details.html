@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       
+        
 
         <!-- title -->
         <title>شركة تيكسا لخدمات الأعمال | TechSA Business Services Co.</title>
@@ -36,6 +36,45 @@
     </head>
 
     <body>
+           <!-- WhatsApp Widget -->
+        <script type="text/javascript">
+            (function () {
+               var options = {
+                whatsapp: "+966554557833", // WhatsApp number
+                whatsapp_color: "#4dc247", // WhatsApp button color
+                whatsapp_label: "WhatsApp", // WhatsApp button label
+                whatsapp_popup_title: "Start a Conversation", // WhatsApp popup title
+                whatsapp_popup_subtitle: "Click one of our members below to chat", // WhatsApp popup subtitle
+                greeting: false, // Greeting message enabled
+                company_logo_url: "//storage.getbutton.io/widget/ce/ced4/ced450cd9e8b53e4ffa3c52b4e863661/logo.png", // URL of company logo (png, jpg, gif)
+                greeting_message: "مرحبا 👋\n يُسعدنا خدمتك وتقديم الإجابة على استفساراتك.\n\n", // Text of greeting message
+                greeting_messengers: true, // Greeting messengers may be 'true' or 'false'
+                greeting_cookie: 86400, // Greeting cookie lifetime
+                greeting_message_delay: 3, // Greeting message delay
+                greeting_agent_name: "خدمة العملاء", // Greeting agent name
+                greeting_agent_position: "online", // Greeting agent position
+                greeting_start_chat_with: "حياك الله، كيف نقدر نخدمك", // Greeting start chat with text
+                greeting_style: "alternative", // Greeting style may be 'classic' or 'alternative'
+                greeting_direction: "column", // Greeting direction may be 'column' or 'row'or 'center'
+                call_to_action: "راسلنا 👋", // Call to action message
+                notification_indicator: false, // Add button notification indicator
+                animation: true, // Animation enabled
+                button_animation: "heartBeat", // Button animation
+                activator_size: 50, // Button size
+                button_shadow: 50, // Button shadow
+                shift_vertical: 50, // Vertical position, px
+                shift_horizontal: 30, // Horizontal position, px
+                domain: "techsa.sa", // site domain
+                key: "BzZUgoRHSKe4sEmIsa6YTw", // pro-widget key
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                })();
+        </script>
+<!-- /WhatsApp Widget -->
+
         <!-- Start header Area -->
         <header class="navbar-area nav-style-two">
             <!-- menu for mobile device -->
@@ -57,7 +96,7 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link active">الرئيسية صفحة12</a>
+                                    <a href="index.html" class="nav-link active">الرئيسية </a>
                                 <!--</li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle active">الرئيسية</a>
@@ -189,6 +228,18 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-item" id="m-sign">
+                                    <a href="#" class="nav-link dropdown-toggle"> تسجيل الدخول  </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="Employee-sign-in.html" class="nav-link">الموظف</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="Company-sign-in.html" class="nav-link">الشركة</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </li>
                             </ul>
                             <div class="search-item">
                                 <div class="search-btn">
@@ -204,9 +255,9 @@
                                     </form>
                                 </div>
                             </div>
-                             <div class="cta-btn">
-                                <button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
-                                     تسجيل الدخو  
+                            <div class="cta-btn">
+<button type="button" class="btn btn-outline dropdown-toggle" data-bs-toggle="dropdown">
+                                    تسجيل الدخول  
                                 </button>
                                 <ul class="dropdown-menu" >
                                   <li><a class="dropdown-item" href="Employee-sign-in.html"><i class="envy envy-user"></i>   الموظف</a></li>
@@ -339,7 +390,7 @@
                             </ul>
                         </div>
                         <div class="cta-btn">
-                            <a href="#" class="btn btn-solid">إبدأ التجربة <i class="envy envy-right-arrow"></i></a>
+                            <a href="contact.html" class="btn btn-solid">تواصل معنا  <i class="envy envy-right-arrow"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 align-self-end">
@@ -389,7 +440,7 @@
                             </div>
                         </div>
                         <div class="cta-btn">
-                            <a href="#" class="btn btn-solid">إبدأ التجربة  <i class="envy envy-right-arrow"></i></a>
+                            <a href="contact.html" class="btn btn-solid">تواصل معنا  <i class="envy envy-right-arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -422,13 +473,14 @@
                             <div class="pricing-item-list">
                                 <ul>
                                     <li><i class="envy envy-paper-plane"></i>  تفعيل نظام تيكسا للعمل عن بعد </li>
-                                    <li><i class="envy envy-paper-plane"></i>اسناد مهام لامحدود </li>
+                                    <li><i class="envy envy-paper-plane"></i>تسجيل الموظفين في بوابة العمل عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>تسجيل موظفي العمل عن بعد في وزارة الموارد البشرية والتنمية الاجتماعية</li>
+                                    <li><i class="envy envy-paper-plane"></i>احتساب نسب التوطين عند تسجيل العاملين عن بعد في التأمينات الاجتماعية، وبوابة العمل عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>نظام الكتروني معتمد للعميل والموظفين</li>
                                     <li><i class="envy envy-paper-plane"></i>اسناد مهام لامحدود </li>
                                     <li><i class="envy envy-paper-plane"></i>تذكير بانتهاء المهام</li>
-                                    <li><i class="envy envy-paper-plane"></i>تفعيل نظام تيكسا للعمل عن بعد</li>
-                                    <li><i class="envy envy-paper-plane" style="color: #6a6377;"></i>تطبيق الجوال</li>
-                                    <li><i class="envy envy-paper-plane" style="color: #6a6377;"></i>الدعم الفني 24/7</li>
-                                </ul>
+                                    <li><i class="envy envy-paper-plane"></i>تسليم التقارير المتعلقة بأداء الموظفين حسب الطلب</li>
+                                    <li><i class="envy envy-paper-plane"></i>موظف بدوام كامل للتنسيق بين العميل والموظفين عن بعد</li>                                </ul>
                                 <a href="contact.html" class="btn btn-solid">أختر الباقة <i class="envy envy-right-arrow"></i></a>
                             </div>
                         </div>
@@ -438,20 +490,31 @@
                         <div class="pricing-item-single">
                             <div class="pricing-item-content">
                                 <div class="content-text">
+                                    <h6> الأكثر طلباً</h6>
                                     <span class="label">الذهبية</span></h2>
                                     <h2 class="price"><span></span>249 ريال</h2>
                                     <p>شهري/للمستخدم</p>
+                                    
                                 </div>
                                 <div class="content-bg"><img src="assets_TechSA/img/resource/icon_shape_8.png" alt="" /></div>
                             </div>
                             <div class="pricing-item-list">
                                 <ul>
+                                    <li><i class="envy envy-paper-plane"></i>  استشارات الموارد البشرية والتوطين </li>
                                     <li><i class="envy envy-paper-plane"></i>  تفعيل نظام تيكسا للعمل عن بعد </li>
-                                    <li><i class="envy envy-paper-plane"></i>اسناد مهام لامحدود </li>
+                                    <li><i class="envy envy-paper-plane"></i>تسجيل الموظفين في بوابة العمل عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>تسجيل موظفي العمل عن بعد في وزارة الموارد البشرية والتنمية الاجتماعية</li>
+                                    <li><i class="envy envy-paper-plane"></i>احتساب نسب التوطين عند تسجيل العاملين عن بعد في التأمينات الاجتماعية، وبوابة العمل عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>نظام الكتروني معتمد للعميل والموظفين</li>
                                     <li><i class="envy envy-paper-plane"></i>اسناد مهام لامحدود </li>
                                     <li><i class="envy envy-paper-plane"></i>تذكير بانتهاء المهام</li>
-                                    <li><i class="envy envy-paper-plane"></i>تفعيل نظام تيكسا للعمل عن بعد</li>
-                                    <li><i class="envy envy-paper-plane" style="color: #6a6377;"></i>الدعم الفني 24/7</li>
+                                    <li><i class="envy envy-paper-plane"></i>تسليم التقارير المتعلقة بأداء الموظفين حسب الطلب</li>
+                                    <li><i class="envy envy-paper-plane"></i>موظف بدوام كامل للتنسيق بين العميل والموظفين عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>مدير حساب لكل عميل لتلبية احتياجاته وتقديم المشورة والمساعدة العملية</li>
+                                    <li><i class="envy envy-paper-plane"></i>تطبيق IOS</li>
+                                    <li><i class="envy envy-paper-plane"></i>دعم فني كامل لجميع الخدمات</li>
+                                    <li><i class="envy envy-paper-plane"></i>اختيار وإدارة عملية التوظيف</li>
+                                    <li><i class="envy envy-paper-plane"></i>استطلاع رأي دوري لقياس مستوى الرضا الوظيفي للموظفين وأصحاب الشركات</li>
                                 </ul>
                                 <a href="contact.html" class="btn btn-solid">أختر الباقة <i class="envy envy-right-arrow"></i></a>
                             </div>
@@ -463,18 +526,33 @@
                             <div class="pricing-item-content">
                                 <div class="content-text">
                                     <span class="label">البلاتينية</span></h2>
-                                    <h2 class="price"><span></span>399 ريال</h2>
-                                    <p>شهري/للمستخدم</p>
+                                    <h5 class="price"><span></span>  </h5>
+                                    <p>تواصل معنا للحصول على عرض</p>
                                 </div>
                                 <div class="content-bg"><img src="assets_TechSA/img/resource/icon_shape_7.png" alt="" /></div>
                             </div>
                             <div class="pricing-item-list">
                                 <ul>
+                                    <li><i class="envy envy-paper-plane"></i>  استشارات الموارد البشرية والتوطين </li>o
                                     <li><i class="envy envy-paper-plane"></i>  تفعيل نظام تيكسا للعمل عن بعد </li>
-                                    <li><i class="envy envy-paper-plane"></i>اسناد مهام لامحدود </li>
+                                    <li><i class="envy envy-paper-plane"></i>تسجيل الموظفين في بوابة العمل عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>تسجيل موظفي العمل عن بعد في وزارة الموارد البشرية والتنمية الاجتماعية</li>
+                                    <li><i class="envy envy-paper-plane"></i>احتساب نسب التوطين عند تسجيل العاملين عن بعد في التأمينات الاجتماعية، وبوابة العمل عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>نظام الكتروني معتمد للعميل والموظفين</li>
                                     <li><i class="envy envy-paper-plane"></i>اسناد مهام لامحدود </li>
                                     <li><i class="envy envy-paper-plane"></i>تذكير بانتهاء المهام</li>
-                                    <li><i class="envy envy-paper-plane"></i>تفعيل نظام تيكسا للعمل عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>تسليم التقارير المتعلقة بأداء الموظفين حسب الطلب</li>
+                                    <li><i class="envy envy-paper-plane"></i>موظف بدوام كامل للتنسيق بين العميل والموظفين عن بعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>مدير حساب لكل عميل لتلبية احتياجاته وتقديم المشورة والمساعدة العملية</li>
+                                    <li><i class="envy envy-paper-plane"></i>تطبيق IOS</li>
+                                    <li><i class="envy envy-paper-plane"></i>دعم فني كامل لجميع الخدمات</li>
+                                    <li><i class="envy envy-paper-plane"></i>اختيار وإدارة عملية التوظيف</li>
+                                    <li><i class="envy envy-paper-plane"></i>استطلاع رأي دوري لقياس مستوى الرضا الوظيفي للموظفين وأصحاب الشركات</li>
+                                    <li><i class="envy envy-paper-plane"></i>إعداد برنامج تدريبي للعاملين عن بعد.</li>
+                                    <li><i class="envy envy-paper-plane"></i>موظف بدوام كامل لأعمال التسويق ومتابعة مواقع التواصل الاجتماعي.</li>
+                                    <li><i class="envy envy-paper-plane"></i>مشرفين ذو مؤهلات ومهارات عالية لمتابعة وتأهيل الموظفين عن بعد.</li>
+                                    <li><i class="envy envy-paper-plane"></i>إدارة متخصصة بالعمل عن يعد</li>
+                                    <li><i class="envy envy-paper-plane"></i>التواصل المباشر مع العملاء لمعرفة الاحتياجات الخاصة بالمهام وانشاء الخطط لإنجازها.</li>
                                 </ul>
                                 <a href="contact.html" class="btn btn-solid">أختر الباقة <i class="envy envy-right-arrow"></i></a>
                             </div>
@@ -500,14 +578,14 @@
                                 </a>
                             </div>
                             <p>شركة تيكسا لخدمات الأعمال من أكثر الشركات نمواً في مجال تشغيل وإدارة المشاريع وتأهيل الكوادر البشرية وتكمن الخبرات الأساسية لدى الشركة في مجالات رئيسة هي: التشغيل؛ إدارة المشاريع، التسويق؛ مراكز الاتصال وخدمة العملاء، استطلاعات الرأي وإجـراءات وعمليات الخدمات التشغيلية.</p>
-                            <!-- <div class="social-link">
+                            <div class="social-link">
                                 <a href="#" class="bg-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#" class="bg-danger" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a href="#" class="bg-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="#" class="bg-pink" target="_blank"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="bg-black" target="_blank"><i class="fab fa-x"></i></a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-5 col-sm-6 col-12">
@@ -555,7 +633,7 @@
                             <div class="contact-info">
                                 <i class="envy envy-plane"></i>
                                 <p>
-                                    <a href="mailTo:info@techsa.sa">techsa.sa</a>
+                                    <a href="mailTo:info@techsa.sa">info@techsa.sa</a>
                                 </p>
                             </div>
                         </div>
